@@ -5,7 +5,7 @@ All challenges must be implemented using React and TypeScript. Please use `creat
 ## List of Front-end Challenges
 
 - [Pokémon Explorer App](./PokemonExplorerApp.md)
-- [Simple Blog App](./SimpleBlogApp.md)
+- [Blog App](./BlogApp.md)
 
 ## Submission
 
