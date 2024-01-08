@@ -1,6 +1,6 @@
 # Simple Blog App
 
-Develop a basic blog app using React and TypeScript. The app will have two main pages: a blog post list page and a blog post detail page.
+Develop a basic blog app using React and TypeScript. The app will consist of two main pages: a blog post list page and a blog post detail page.
 
 ## Requirements
 
@@ -24,6 +24,8 @@ Implement the following functionalities:
 - Create a new blog post
 - Edit an existing blog post
 - Delete a blog post
+
+Use appropriate JSONPlaceholder endpoints to implement these features.
 
 #### Error Handling
 
