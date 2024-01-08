@@ -8,7 +8,6 @@ Create a mini Pokémon explorer app using React and TypeScript. The app will con
 
 - Display a paginated list of Pokémon, showing their names.
 - Clicking on a Pokémon should take the user to the Pokémon detail page.
-- (BONUS) Implement a search bar to filter Pokémon by name.
 
 #### Pokémon detail page (`/pokemons/:id`)
 
