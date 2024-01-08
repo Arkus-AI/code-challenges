@@ -4,21 +4,16 @@ Build a mini Pokémon explorer app using React and TypeScript. The app will have
 
 ## Requirements
 
-#### Pokémon list (`/pokemons`)
+#### Pokémon list
 
 - Display a paginated list of Pokémon, showing their names.
 - Clicking on a Pokémon should take the user to the Pokémon detail page.
 
-#### Pokémon detail page (`/pokemons/:id`)
+#### Pokémon detail page
 
 - Display the Pokémon's name and a list of its abilities.
 - Include a button to go back to the Pokémon list page.
-- (BONUS) Show the Pokémon image (refer to [this](https://github.com/PokeAPI/pokeapi/issues/346)).
-
-#### Error handling
-
-- Show a message when the API request fails.
-- Display a 404 page when the user navigates to a non-existent page.
+- (Bonus) Show the Pokémon image (refer to [this](https://github.com/PokeAPI/pokeapi/issues/346)).
 
 #### Styling
 
