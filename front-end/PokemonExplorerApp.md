@@ -1,8 +1,8 @@
-## Pokémon Explorer App
+# Pokémon Explorer App
 
 Build a mini Pokémon explorer app using React and TypeScript. The app will have two main pages: a Pokémon list page and a Pokémon detail page.
 
-### Requirements
+## Requirements
 
 #### Pokémon list (`/pokemons`)
 
@@ -24,14 +24,6 @@ Build a mini Pokémon explorer app using React and TypeScript. The app will have
 
 - Apply styling to all pages and ensure they have a responsive design.
 
-### API
+## API
 
 Fetch Pokémon data using the [PokéAPI](https://pokeapi.co/).
-
-### Evaluation criteria
-
-The following aspects will be considered when evaluating the challenge:
-
-- Functionality: Does the app work as expected?
-- Code quality: Is the code well-structured, readable, and following best practices?
-- Error handling: Does the app handle errors gracefully?
