@@ -38,6 +38,6 @@ If you have time left, you can implement one or more of the following nice-to-ha
 
 - Submit the project as a GitHub repository.
 - Include a README file with setup instructions, implementation notes and documentation for how to call your API.
-- Invite `VladimirLi` and `mferno` as collaborators to the repository.
+- Invite `VladimirLi` as a collaborator to the repository.
 
 Best of luck, and we look forward to see your solution!
