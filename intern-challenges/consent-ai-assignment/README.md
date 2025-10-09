@@ -11,6 +11,7 @@ Design and implement a prototype that demonstrates the use of GenAI, NLP, and sp
 * Provide spoken or written responses.
 * Capture final consent via a digital signature or verbal agreement.
 
+Note: You can use a mock-up consent form 
 ---
 
 ### Use Case Scenario
@@ -40,6 +41,7 @@ Design and implement a prototype that demonstrates the use of GenAI, NLP, and sp
 
   * Give **verbal consent**, captured via speech-to-text and saved with a timestamp.
   * Or, use a **digital signature** (e.g., touchscreen signature pad or drawing on screen).
+  * the final signed consent in **PDF format** that can be downloaded and stored in a database
 
 #### 4. **Language Support**
 
@@ -48,6 +50,7 @@ Design and implement a prototype that demonstrates the use of GenAI, NLP, and sp
 #### 5. **Logging & Traceability**
 
 * Log the full conversation, consents, and timestamps in a structured format (e.g., JSON or a small database).
+* a database to store signed consent
 
 ---
 
@@ -55,11 +58,13 @@ Design and implement a prototype that demonstrates the use of GenAI, NLP, and sp
 
 * A working demo (Streamlit, Gradio, or simple web UI).
 * Code repository (GitHub or similar) with instructions to run locally.
-* Short design document (\~1 page) explaining:
+* Short design document (\~1-2 pages or slides) explaining:
 
+  * architecture diagram
   * Tech stack decisions.
-  * How speech and LLM were integrated.
-  * Edge cases considered (e.g., "What if the patient is unsure?").
+  * database integration.
+  * future extension into a full-blown agent
+ 
 
 ---
 
