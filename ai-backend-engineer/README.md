@@ -1,93 +1,117 @@
-# 🥪 Technical Assignment: Customer Feedback Analysis Tool
+# Technical Assignment: Customer Feedback Analysis Tool
 
-Welcome! This is a **two-part exercise** designed to assess both your ability to translate business requirements into a working system (**Part 1**) and your ability to evaluate and communicate about code (**Part 2**).
-
----
-
-## Part 1: Implementation – Feedback Analysis System
-
-### 🧠 Business Context
-
-We receive written feedback from customers and want to better understand and act on it. Your task is to build a minimal backend solution that helps our operations team:
-
-1. Understand the **sentiment** of each message (positive, neutral, negative)
-2. Identify the **main topic** of the message (e.g., customer service, pricing, delivery, product quality)
-3. Store the feedback in a **structured and retrievable** way, linked to the customer who submitted it
-4. Trigger a **notification** when the sentiment is negative so we can respond quickly
-
-This process should be fully automatic—no manual review of messages.
+A two-part exercise assessing your ability to build AI-powered systems and evaluate code.
 
 ---
 
-### 🛠️ What to Build
+## Part 1: Feedback Analysis System
 
-Design and implement a minimal backend that achieves the goals above.
+### Business Context
 
-#### ✅ You **must**:
+We receive written customer feedback and want to automatically:
 
-- Submit code that can be tested with a single command
-- Include a README that explains setup, assumptions, and design
-- Write basic automated tests, especially covering negative sentiment alerts
+1. **Classify sentiment** appropriately
+2. **Identify topics** to route feedback to the right team
+3. **Store feedback** for retrieval and analysis
+4. **Alert the team** when immediate action is needed
 
-#### ✳️ You **may**:
+> **Note:** Requirements are intentionally open-ended. You may email clarifying questions before starting—we evaluate what candidates ask (or don't ask).
 
-- Choose any language, framework, database, or NLP tools
+---
+
+### Constraints
+
+Your solution must balance these real-world constraints:
+
+| Constraint | Requirement |
+|------------|-------------|
+| Response time | API responds within **500ms** |
+| Reliability | System works even when AI provider is down |
+| Cost | Design for paid AI API calls |
+| Volume | Handle **100 messages/minute** at peak |
+
+These constraints conflict. Show us how you navigate trade-offs.
+
+---
+
+### Requirements
+
+#### You Must:
+- Submit code testable with a single command
+- Include a README (structure below)
+- Write tests covering: alert triggering, AI response parsing, provider failures, edge cases
+
+#### You May:
+- Choose any language, framework, database, or AI tools
 - Use third-party APIs or models
-- Stub/mimic things like authentication or notifications
-
-We are deliberately **not** prescribing the tech stack or system boundaries. We want to see how you make and justify technical decisions.
+- Stub authentication or notifications
 
 ---
 
-### 📘 README Instructions
+### README Structure
 
-Include a `README.md` in your project root with these sections:
+#### 1. Design Rationale *(Write before coding)*
+- What clarifying questions would you ask?
+- What 2-3 approaches did you consider?
+- Why this approach over alternatives?
+- What are you intentionally NOT building?
 
-#### 1. Setup & Usage
+> We value this section highly—it shows how you think.
 
-- How to run the app and tests
-- Any environment setup or config notes
+#### 2. Setup & Usage
+- How to run app and tests
+- Environment setup notes
 
-#### 2. Assumptions Made
+#### 3. Assumptions
+- What you assumed about data, topics, behavior
+- Flag uncertain assumptions
 
-- What you assumed about customer data, topics, or system behavior
+#### 4. Technical Decisions
+For each major decision: what you chose, why, and alternatives rejected.
 
-#### 3. Technical Decisions Log
+#### 5. AI Integration
+- Prompt design and iteration process
+- Handling non-deterministic outputs
+- Edge cases (sarcasm, multiple topics, gibberish)
+- Error handling and caching strategies
 
-For each major decision (e.g., language, storage, libraries, API design):
+#### 6. Failure Modes
+Document **3 ways your system could fail**:
+- What goes wrong?
+- How would you detect it?
+- What's the user impact?
+- How does your implementation handle it?
 
-- What you chose
-- Why you chose it
-- Alternatives considered and why you didn't choose them
-
-#### 4. If This Went to Production
-
-- What would you prioritize to improve?
-- How would you scale, secure, or monitor it?
+#### 7. Production Considerations
+- AI monitoring (accuracy, latency, cost)
+- Observability for debugging
+- Prompt versioning / A/B testing
+- Security for external AI providers
+- Scaling to 10x volume
 
 ---
 
-### 🤔 Before You Submit
+### Evaluation Criteria
 
-Please reflect briefly and include answers to the following in your README:
+| Area | What We Look For |
+|------|------------------|
+| **Problem Understanding** | Good questions, identified ambiguities |
+| **Design Thinking** | Reasoning about alternatives *before* coding |
+| **Constraint Navigation** | Resolving speed vs. cost vs. reliability |
+| **Failure Awareness** | Anticipating what breaks, detection, mitigation |
+| **AI Integration** | Prompt design, validation, error handling |
+| **Code Quality** | Readable, maintainable, tested |
 
-- What trade-offs did you make?
-- How does your solution meet the business goals?
-- What would you do with more time?
+> **We value reasoning over completeness.** A well-documented solution with clear trade-offs beats feature-complete code with no explanation.
 
 ---
 
-## Part 2: Code Review Exercise – Data Transformation
+## Part 2: Code Review
 
-### 🔍 Scenario
-
-You’re reviewing a teammate’s utility function that prepares user data for the frontend. The data is received from a backend service in raw form and needs formatting.
-
-### 🔧 Code Snippet to Review
+You're reviewing a teammate's PR for a user data formatting utility:
 
 ```ts
 // user-formatter.ts
-
 export function formatUserList(users: any[]) {
   const formatted = [];
 
@@ -117,21 +141,12 @@ export function formatUserList(users: any[]) {
 }
 ```
 
-### 🔍 Your Task
-
-Review the code above and provide feedback as if it were a teammate's pull request.
-
-Please include:
-
-- What you'd improve or refactor
-- Anything you'd question or want clarified
-- Anything that's done well
-- Suggestions for clearer naming, structure, or maintainability
-
-You may use inline comments or markdown bullet points.
-
-This part helps us understand how you think about code quality, communication, and team collaboration.
+**Provide PR feedback covering:**
+- What to improve or refactor
+- Questions for the author
+- What's done well
+- Naming, structure, maintainability suggestions
 
 ---
 
-Good luck, and thanks for your time and effort! Let us know if you need clarification at any point.
+Good luck! Email us if you need clarification.
