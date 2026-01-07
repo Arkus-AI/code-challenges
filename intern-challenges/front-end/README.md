@@ -20,6 +20,6 @@ The following aspects will be considered when evaluating your submission:
 
 - Submit the project as a GitHub repository.
 - Include a README file with setup instructions and implementation notes.
-- Invite `VladimirLi` and `mferno` as collaborators to the repository.
+- Invite `VladimirLi` as collaborators to the repository.
 
 Best of luck, and we look forward to seeing your solution!
